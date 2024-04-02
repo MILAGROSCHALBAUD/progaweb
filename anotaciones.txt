@@ -1,5 +1,5 @@
 CSS es Cascade Style Sheet
-Hoja de estilo en cascada
+Hoja de estilo en cascadan << Caja Negra
 
 hay 3 formas de vincular HTML con CSS.
 1.⁠ ⁠Internal:
@@ -12,5 +12,3 @@ aca van las reglas de css
 
 3.⁠ ⁠External:
 un archivo .css con todas las reglas
-
-
