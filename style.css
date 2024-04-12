@@ -22,10 +22,11 @@ nav {
 nav ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
 }
 
 nav ul li {
-  display: inline;
   margin: 0 10px; /* Espacio entre elementos */
 }
 
@@ -50,13 +51,11 @@ body {
 
 /* Estilo para la sección de reserva */
 /* Centrar el contenido del cuerpo */
-body {
-  text-align: center;
-}
-
 .reservation {
-  display: inline-block; 
-  margin: 0 auto; 
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  flex-direction: column; /* Apilar elementos verticalmente */
   margin-bottom: 30px;
   text-align: left; 
 }
@@ -70,13 +69,14 @@ body {
 /* Estilo para el pie de página */
 footer {
   text-align: center;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
 }
 
 footer .contact-info,
 footer .more-info,
 footer .keep-in-touch {
   display: inline-block;
-  vertical-align: top; /* Alinear elementos verticalmente */
   margin: 0 10px; /* Espacio entre elementos */
 }
 
