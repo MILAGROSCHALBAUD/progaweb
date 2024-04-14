@@ -66,26 +66,41 @@ body {
   padding: 20px;
 }
 
+
 /* Estilo para el pie de página */
 footer {
   text-align: center;
   display: flex;
-  justify-content: center; /* Centrar horizontalmente */
+  justify-content: space-between; /* Distribuir los elementos horizontalmente */
+  align-items: flex-start; /* Alinear elementos en la parte superior */
+  padding: 20px;
 }
 
-footer .contact-info,
-footer .more-info,
-footer .keep-in-touch {
+/* Estilo para el contenedor del logo y el nombre del hotel */
+.footer-logo {
+  display: flex;
+  flex-direction: column; /* Alinear elementos en columna */
+  align-items: flex-start; /* Alinear elementos a la izquierda */
+}
+
+/* Estilo para el nombre del hotel en el pie de página */
+.footer-logo h1 {
+  margin: 0; /* Eliminar márgenes */
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Estilo para el resto del contenido del pie de página */
+.footer-content {
+  display: flex;
+  align-items: flex-start; /* Alinear elementos a la izquierda */
+}
+
+/* Estilo para los elementos de contacto, more y keep in touch */
+.contact-info,
+.more-info,
+.keep-in-touch {
   display: inline-block;
   margin: 0 10px; /* Espacio entre elementos */
-}
-
-footer h2 {
-  font-family: "Times New Roman", Times, serif; /* Cambiar el tipo de letra */
-}
-
-footer p {
-  margin: 5px 0; /* Espacio entre párrafos */
 }
 
 /* Quitar las viñetas y cambiar el estilo de los enlaces en la sección de MORE */
