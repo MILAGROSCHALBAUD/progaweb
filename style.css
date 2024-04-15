@@ -1,20 +1,20 @@
-/* Centrar el contenido de la clase logo */
+/* Centrar logo */
 .logo {
   text-align: center;
 }
 
-/* Estilo para la imagen dentro de la clase logo */
+/* Estilo para  logo */
 .logo img {
   display: block; 
   margin: 0 auto; 
 }
 
-/* Estilo para el título dentro de la clase logo */
+/* Estilo logo */
 .logo h1 {
   font-family: "Times New Roman", Times, serif; 
 }
 
-/* Estilo para el menú de navegación */
+/* Estilo para el menú  */
 nav {
   text-align: center;
 }
@@ -50,7 +50,7 @@ body {
 }
 
 /* Estilo para la sección de reserva */
-/* Centrar el contenido del cuerpo */
+
 .reservation {
   display: flex;
   justify-content: center; /* Centrar horizontalmente */
@@ -66,7 +66,6 @@ body {
   padding: 20px;
 }
 
-
 /* Estilo para el pie de página */
 footer {
   text-align: center;
@@ -76,14 +75,14 @@ footer {
   padding: 20px;
 }
 
-/* Estilo para el contenedor del logo y el nombre del hotel */
+/* Estilo para el logo y el nombre del hotel */
 .footer-logo {
   display: flex;
   flex-direction: column; /* Alinear elementos en columna */
   align-items: flex-start; /* Alinear elementos a la izquierda */
 }
 
-/* Estilo para el nombre del hotel en el pie de página */
+/* Estilo para el nombre del hotel */
 .footer-logo h1 {
   margin: 0; /* Eliminar márgenes */
   font-family: "Times New Roman", Times, serif;
@@ -95,7 +94,7 @@ footer {
   align-items: flex-start; /* Alinear elementos a la izquierda */
 }
 
-/* Estilo para los elementos de contacto, more y keep in touch */
+/* Estilo para los elementos de contact, more y keep in touch */
 .contact-info,
 .more-info,
 .keep-in-touch {
@@ -103,7 +102,7 @@ footer {
   margin: 0 10px; /* Espacio entre elementos */
 }
 
-/* Quitar las viñetas y cambiar el estilo de los enlaces en la sección de MORE */
+/* Quitar las viñetas en la  sección de MORE */
 .more-info ul {
   list-style-type: none; /* Quitar las viñetas */
 }
