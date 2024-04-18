@@ -130,30 +130,34 @@
   
   /* Media queries para hacer la página responsive */
   
-  /* Estilo para pantallas pequeñas */
-  @media screen and (max-width: 768px) {
-    nav ul {
-      flex-direction: column; /* Apilar elementos verticalmente */
-    }
-  
-    nav ul li {
-      margin: 10px 0; /* Espacio entre elementos */
-    }
-  
-    .logo h1 {
-      font-size: 1.5em; /* Tamaño de fuente más pequeño */
-    }
-  
-    .footer-logo h1 {
-      font-size: 1.2em; /* Tamaño de fuente más pequeño */
-    }
-  
-    .contact-info,
-    .more-info,
-    .keep-in-touch {
-      margin: 10px 0; /* Espacio entre elementos */
-    }
+/* Estilo para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  nav ul,
+  .contact-info,
+  .more-info,
+  .keep-in-touch {
+    flex-direction: column; /* Apilar elementos verticalmente */
   }
+
+  nav ul li {
+    margin: 10px 0; /* Espacio entre elementos */
+  }
+
+  .logo h1 {
+    font-size: 1.5em; /* Tamaño de fuente más pequeño */
+  }
+
+  .footer-logo h1 {
+    font-size: 1.2em; /* Tamaño de fuente más pequeño */
+  }
+
+  .contact-info,
+  .more-info,
+  .keep-in-touch {
+    margin: 0; /* Eliminar el margen */
+  }
+}
+
   
   /* Estilo para pantallas medianas y grandes */
   @media screen and (min-width: 769px) {
