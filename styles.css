@@ -96,23 +96,37 @@
     align-items: flex-start; /* Alinear elementos a la izquierda */
   }
   
-  /* Estilo para los elementos de contact, more y keep in touch */
-  .contact-info,
-  .more-info,
-  .keep-in-touch {
-    display: inline-block;
-    margin: 0 10px; /* Espacio entre elementos */
-  }
-  
-  /* Quitar las viñetas en la sección de MORE */
-  .more-info ul {
-    list-style-type: none; /* Quitar las viñetas */
-  }
-  
-  .more-info ul li a {
-    text-decoration: none; /* Quitar subrayado */
-    color: black; /* Cambiar color del texto */
-  }
+ /* Estilo para la sección de MORE, CONTACT y KEEP IN TOUCH */
+.contact-info,
+.more-info,
+.keep-in-touch {
+  display: flex;
+  flex-direction: column; /* Apilar elementos verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+}
+
+.contact-info h2,
+.more-info h2,
+.keep-in-touch h2 {
+  margin-bottom: 10px; /* Espacio entre el título y los elementos */
+}
+
+.contact-info p,
+.more-info ul,
+.keep-in-touch p {
+  margin: 5px 0; /* Espacio entre elementos */
+}
+
+/* Quitar las viñetas en la sección de MORE */
+.more-info ul {
+  list-style-type: none; /* Quitar las viñetas */
+}
+
+.more-info ul li a {
+  text-decoration: none; /* Quitar subrayado */
+  color: black; /* Cambiar color del texto */
+}
+
   
   /* Media queries para hacer la página responsive */
   
