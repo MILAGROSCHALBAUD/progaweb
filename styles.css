@@ -132,7 +132,7 @@ footer {
 
 /* Media queries para hacer la página responsive */
 
-/* Estilo para pantallas pequeñas */
+/* Estilo para pantallas chicas */
 @media screen and (max-width: 768px) {
   nav ul,
   .contact-info,
