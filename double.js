@@ -5,9 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
       "suite-double-3.jpg",
       "suite-double-4.jpg",
       "suite-double-5.jpg",
-      "suite-double-6.jpg",
-      "suite-double-7.jpg",
-      "suite-double-8.jpg"
     ];
     let currentImageIndex = 0;
     const currentImage = document.getElementById("current-image");
