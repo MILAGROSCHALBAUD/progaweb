@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation - Pawkingham Palace</title>
+  <link rel="stylesheet" href="confirmation.css">
+  <header>
+    <div class="logo">
+      <img src="escudo.jpg" alt="Escudo del hotel">
+      <h1>Pawkingham Palace</h1>
+    </div>
+  </header>
+</head>
+<body>
+  <h1>Reservation Confirmation</h1>
+  
+  <div id="reservation-details">
+    <p>Check-In Date: <span id="check-in-date"></span></p>
+    <p>Check-Out Date: <span id="check-out-date"></span></p>
+    <p>Adults: <span id="num-adults"></span></p>
+    <p>Puppies: <span id="num-children"></span></p>
+    <p>Total Price: $<span id="total-price"></span></p>
+  </div>
+
+  <h2>Guest Information</h2>
+  <form id="guest-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" required><br>
+    <label for="payment">Payment Method:</label>
+    <select id="payment" required>
+      <option value="credit">Credit Card</option>
+      <option value="paypal">PayPal</option>
+    </select><br>
+    <button type="button" id="confirm-reservation">Final Confirmation</button>
+  </form>
+
+  <div id="confirmation-message" style="display: none;">
+    <p>Reservation Confirmed</p>
+    <p>Thank you for choosing Pawkingham Palace!</p>
+  </div>
+
+  <footer>
+    <div class="logo">
+      <img src="escudo.jpg" alt="Logo del hotel">
+      <h1>Pawkingham Palace</h1>
+    </div>
+    <div class="contact-info">
+      <h2>CONTACT</h2>
+      <p>London SW1A 1AA, England</p>
+      <p>(020) 759-3000 or (0808) 850-0909</p>
+      <p>pawkinghampalace@reservation.com</p>
+    </div>
+    <div class="more-info">
+      <h2>MORE</h2>
+      <ul>
+        <li><a href="#">Special Offers</a></li>
+        <li><a href="#">Guest Information</a></li>
+        <li><a href="#">Accessibility Information</a></li>
+        <li><a href="#">Frequently Asked Questions</a></li>
+        <li><a href="#">Location Map</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+    </div>
+    <div class="keep-in-touch">
+      <h2>KEEP IN TOUCH</h2>
+      <p>Sign up to our mailing list</p>
+    </div>
+  </footer>
+  <script src="confirmation.js" defer></script>
+</body>
+</html>

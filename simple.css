@@ -1,0 +1,206 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  text-align: center;
+  background-color: #f0f0f0; /* Cambiar el color de fondo */
+  color: #000; /* Cambiar el color del texto */
+  padding: 10px 0;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.logo h1 {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+main {
+  display: flex;
+  /*max-width: 800px;*/
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.room-details {
+  display: flex;
+  align-items: flex-start; /* Alinear los elementos al principio del contenedor */
+}
+
+.text-container {
+  flex: 1; 
+  margin-right: 20px; /* Mantenemos el margen derecho */
+  margin-left: 50px; 
+  display: flex; /* Convertimos el contenedor de texto en un contenedor de flex */
+  flex-direction: column; /* Colocamos los elementos en una columna */
+}
+
+.text-container h2 {
+  margin: 0; /* Eliminamos los márgenes del título */
+}
+
+.text-container p {
+  margin: 0; /* Quitamos todos los márgenes */
+  text-align: justify; /* Justificamos el texto */
+  margin-left: 20px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  flex-shrink: 0; /* No ajustar el tamaño */
+  margin-left: 100px; /* Espaciado a la izquierda */
+}
+
+.image-container img {
+  max-width: 100%; /* Tamaño máximo para todas las imágenes */
+  height: auto;
+}
+
+/* Estilo para el formulario de reserva */
+.reservation {
+  margin-top: 20px; /* Espacio entre las imágenes y el formulario */
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+.reservation form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation label {
+  margin-bottom: 5px;
+}
+
+.reservation input,
+.reservation button {
+  margin-bottom: 10px;
+}
+
+/* Estilo para el pie de página */
+footer {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+  justify-content: space-between; /* Distribuir los elementos horizontalmente */
+  align-items: flex-start; /* Alinear elementos en la parte superior */
+  padding: 20px;
+}
+
+/* Estilo para el logo y el nombre del hotel en el pie de página */
+.footer-logo {
+  display: flex;
+  flex-direction: column; /* Alinear elementos en columna */
+  align-items: flex-start; /* Alinear elementos a la izquierda */
+  margin-bottom: 20px; /* Agregar espacio inferior para separar del contenido inferior */
+}
+
+/* Estilo para el nombre del hotel en el pie de página */
+.footer-logo h1 {
+  margin: 0; /* Eliminar márgenes */
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Estilo para el resto del contenido del pie de página */
+.footer-content {
+  display: flex;
+  align-items: flex-start; /* Alinear elementos a la izquierda */
+}
+
+/* Estilo para la sección de MORE, CONTACT y KEEP IN TOUCH en el pie de página */
+.contact-info,
+.more-info,
+.keep-in-touch {
+  display: flex;
+  flex-direction: column; /* Apilar elementos verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+}
+
+.contact-info h2,
+.more-info h2,
+.keep-in-touch h2 {
+  margin-bottom: 10px; /* Espacio entre el título y los elementos */
+}
+
+.contact-info p,
+.more-info ul,
+.keep-in-touch p {
+  margin: 5px 0; /* Espacio entre elementos */
+}
+
+/* Quitar las viñetas en la sección de MORE en el pie de página */
+.more-info ul {
+  list-style-type: none; /* Quitar las viñetas */
+}
+
+.more-info ul li a {
+  text-decoration: none; /* Quitar subrayado */
+  color: black; /* Cambiar color del texto */
+}
+
+/* Media queries para hacer la página responsive */
+
+/* Estilo para pantallas chicas */
+@media screen and (max-width: 768px) {
+  nav ul,
+  .contact-info,
+  .more-info,
+  .keep-in-touch {
+    flex-direction: column; /* Apilar elementos verticalmente */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Espacio entre elementos */
+  }
+
+  .logo h1 {
+    font-size: 1.5em; /* Tamaño de fuente más pequeño */
+  }
+
+  .footer-logo h1 {
+    font-size: 1.2em; /* Tamaño de fuente más pequeño */
+  }
+
+  .contact-info,
+  .more-info,
+  .keep-in-touch {
+    margin: 0; /* Eliminar el margen */
+  }
+}
+
+/* Estilo para pantallas medianas y grandes */
+@media screen and (min-width: 769px) {
+  .logo img {
+    width: 100px; /* Tamaño de la imagen del logo */
+  }
+
+  nav ul {
+    justify-content: center; /* Centrar horizontalmente */
+  }
+
+  .logo h1 {
+    font-size: 2em; /* Tamaño de fuente más grande */
+  }
+
+  .footer-logo h1 {
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+  }
+
+  .contact-info,
+  .more-info,
+  .keep-in-touch {
+    margin: 0 20px; /* Espacio entre elementos */
+  }
+}

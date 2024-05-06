@@ -14,26 +14,32 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#">ROOMS & SUITES</a></li>
+        <li><a href="roomsandsuites.html">ROOMS & SUITES</a></li>
         <li><a href="#">DINING</a></li>
         <li><a href="#">SHOPS</a></li>
         <li><a href="#">WELLNESS</a></li>
-        <li><a href="#">MEETINGS & CELEBRATIONS</a></li>
-        <li><a href="#">WILLIAM</a></li>
+        <li><a href="meetingsandcelebrations.html">MEETINGS & CELEBRATIONS</a></li>
+        <li><a href="william.html">WILLIAM</a></li>
         <li><a href="#">HISTORY</a></li>
         <li><a href="#">GALLERY</a></li>
         <li><a href="#">OFFERS</a></li>
-        <li><a href="#">RESERVATIONS</a></li>
+        <li><a href="roomsandsuites.html">RESERVATIONS</a></li>
       </ul>
     </nav>
+  </header>
 
-</header>
-<section class="photo-gallery">
-  <img src="hotel.jpg" alt="Ejemplo de imagen">
-  <!-- La idea es que aca aparezcan muchas fotos y se vayan desplazando o lo hago con animaciones o java-->
-</section>
+  <section class="photo-gallery">
+    <div class="gallery-container">
+      <img src="hotel.jpg" alt="Foto principal">
+      <img src="palace.jpg" alt="Foto palace ">
+      <img src="jardin.jpg" alt="Foto jardin">
+      <img src="suite.jpg" alt="Foto suite">
+      <img src="fiesta.jpg" alt="Foto party">
+    </div>
+  </section>
+
   <section class="reservation">
-    <form>
+    <form action="roomsandsuites.html" method="GET">
       <label for="check-in">CHECK-IN DATE:</label>
       <input type="date" id="check-in">
       <label for="check-out">CHECK-OUT DATE:</label>
@@ -45,26 +51,24 @@
       <button type="submit">CHECK AVAILABILITY</button>
     </form>
   </section>
+
   <section class="hotel-info">
     <div class="logo">
       <img src="escudo.jpg" alt="Escudo del hotel">
       <h1>Pawkingham Palace</h1>
     </div>
-    <p>Welcome to "Pawkingham Palace," where luxury meets canine royalty in the most opulent fashion. Our tale begins centuries ago when a visionary pup named Lord William of Pawkingham decided it was time to create a haven of grandeur for dogs of noble lineage.
-
-      Nestled amidst picturesque gardens and sprawling estates, Pawkingham Palace stands as the pinnacle of extravagance for our distinguished four-legged guests. Originally conceived as a sumptuous residence for the ruling canine aristocracy, it has since evolved into the premier destination for the most discerning doggos.
-      
-      As our esteemed guests arrive, they are greeted by a team of impeccably trained staff, poised to fulfill their every desire. The grand foyer exudes elegance with its sparkling chandeliers and marble floors, setting the stage for an unforgettable experience.
-      
-      Each guest chamber is meticulously crafted to provide unparalleled comfort and contentment for our furry friends. From deluxe bedding to gourmet cuisine and personalized spa treatments, every detail is tailored to ensure that our guests feel like true royalty throughout their stay.
-      
-      The expansive grounds offer ample opportunities for leisure and exploration, from manicured gardens to sprawling meadows, providing our guests with the perfect backdrop for their royal romps and playtime.
-      
-      For those seeking the ultimate indulgence, our exclusive "Regal Paw Suite" awaits, offering a sanctuary of unparalleled luxury fit for a king or queen. Complete with a private terrace, personal valet, and round-the-clock pampering, it epitomizes the height of canine opulence.
-      
-      Yet Pawkingham Palace is more than just a lodging—it's a destination in its own right. Our calendar is brimming with prestigious events, from elegant balls to high-stakes agility tournaments, ensuring that our esteemed guests always have a reason to wag their tails in delight.
-      
-      So whether your furry companion seeks a brief respite or an extended sojourn, Pawkingham Palace promises an experience beyond compare, where every dog reigns supreme in a kingdom of unrivaled luxury and splendor. After all, in the realm of Pawkingham, every pup deserves to be treated like royalty, if only for a little while.</p>
+    <div class="intro-text">
+      <p>Welcome to "Pawkingham Palace," where luxury meets canine royalty in the most opulent fashion. Our tale begins centuries ago when a visionary pup named Lord William of Pawkingham decided it was time to create a haven of grandeur for dogs of noble lineage.</p>
+      <p>Nestled amidst picturesque gardens and sprawling estates, Pawkingham Palace stands as the pinnacle of extravagance for our distinguished four-legged guests. Originally conceived as a sumptuous residence for the ruling canine aristocracy, it has since evolved into the premier destination for the most discerning doggos</p>
+      <div class="full-text">
+        <p>Each guest chamber is meticulously crafted to provide unparalleled comfort and contentment for our furry friends. From deluxe bedding to gourmet cuisine and personalized spa treatments, every detail is tailored to ensure that our guests feel like true royalty throughout their stay.</p>
+        <p>The expansive grounds offer ample opportunities for leisure and exploration, from manicured gardens to sprawling meadows, providing our guests with the perfect backdrop for their royal romps and playtime.</p>
+        <p>For those seeking the ultimate indulgence, our exclusive "Regal Paw Suite" awaits, offering a sanctuary of unparalleled luxury fit for a king or queen. Complete with a private terrace, personal valet, and round-the-clock pampering, it epitomizes the height of canine opulence.</p>
+        <p>Yet Pawkingham Palace is more than just a lodging—it's a destination in its own right. Our calendar is brimming with prestigious events, from elegant balls to high-stakes agility tournaments, ensuring that our esteemed guests always have a reason to wag their tails in delight.</p>
+        <p>So whether your furry companion seeks a brief respite or an extended sojourn, Pawkingham Palace promises an experience beyond compare, where every dog reigns supreme in a kingdom of unrivaled luxury and splendor. After all, in the realm of Pawkingham, every pup deserves to be treated like royalty, if only for a little while.</p>
+      </div>
+      <button onclick="toggleText()">Read More</button>
+    </div>
   </section>
   <footer>
     <div class="logo">
@@ -94,5 +98,27 @@
       <!-- Aca haria un formulario de suscripción -->
     </div>
   </footer>
+  
+  <!-- JavaScript -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll(".gallery-container img");
+  let currentIndex = 0;
+
+  function showNextImage() {
+    images[currentIndex].style.display = "none"; // Oculta la imagen actual
+    currentIndex = (currentIndex + 1) % images.length; // Calcula el índice de la siguiente imagen
+    images[currentIndex].style.display = "block"; // Muestra la siguiente imagen
+  }
+
+  // Muestra solo la primera imagen al cargar la página
+  images[currentIndex].style.display = "block";
+
+  // Comienza el intervalo para mostrar las siguientes imágenes
+  setInterval(showNextImage, 3000); // Cambia la imagen cada 3 segundos
+});
+</script>
+
+<script src="readmore.js"></script>
 </body>
 </html>

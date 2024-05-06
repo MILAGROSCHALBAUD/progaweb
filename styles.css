@@ -44,13 +44,18 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* Estilo para la sección de galería de fotos */
+/* Photo gallery */
 .photo-gallery {
-  margin-bottom: 30px;
+  overflow: hidden; /* Para ocultar cualquier contenido que desborde del contenedor */
 }
-
-.photo-gallery img {
-  width: 100%;
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery-container img {
+  width: 100%; /* Ancho fijo para todas las imágenes */
+  height: 500px; /* Altura fija para todas las imágenes */
+  display: none;
 }
 
 /* Estilo para la sección de reserva */
@@ -64,10 +69,41 @@ body {
 }
 
 /* Estilo para la sección de información del hotel */
+
 .hotel-info {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /* Color de fondo oscuro */
   padding: 20px;
 }
+.hotel-info .intro-text {
+  background-color: #f0f0f0;
+  text-align: center; /* Centra el texto */
+}
+
+.full-text {
+  max-height: none; /* Elimina la altura máxima para mostrar todo el texto */
+  overflow: hidden; /* Oculta el exceso de texto */
+  transition: max-height 0.5s ease; /* Agrega una transición suave para la animación */
+}
+
+.intro-text button {
+  background-color: transparent; /* color de fondo  */
+  border: none;
+  color: black; /*  color de texto  */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.intro-text button:hover {
+  background-color: transparent;
+}
+.hidden {
+  display: none; /* Oculta el contenido */
+}
+
 
 /* Estilo para el pie de página */
 footer {
@@ -184,3 +220,5 @@ footer {
       margin: 0 20px; /* Espacio entre elementos */
   }
 }
+
+

@@ -1,0 +1,58 @@
+/* Estilos generales */
+body {
+  font-family: "Times New Roman", Times, serif; /* Cambio de fuente a Times New Roman */
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* Fondo de la página gris claro */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+  color: #666;
+}
+
+img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  border-radius: 8px; /* Borde redondeado */
+  border: 2px solid #dcdcdc; /* Borde gris claro */
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px; /* Borde redondeado */
+  border: 2px solid #dcdcdc; /* Borde gris claro */
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+}
+
+/* Estilos para enlaces */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

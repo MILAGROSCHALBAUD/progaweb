@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regal Paw Suite - Pawkingham Palace</title>
+  <link rel="stylesheet" href="simple.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="escudo.jpg" alt="Escudo del hotel">
+      <h1>Pawkingham Palace</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="room-details">
+      <div class="text-container">
+        <h2>Regal Paw Suite</h2>
+        <p>Providing free toiletries and bathrobes, this twin/double room includes a private bathroom with a bath, a shower, and a bidet. The spacious air-conditioned twin/double room provides a flat-screen TV with streaming services, soundproof walls, a minibar, a tea and coffee maker as well as an inner courtyard view. The unit offers 1 bed.</p>
+      <div class="image-container">
+        <button id="prev-image">&#10094;</button>
+        <img src="suite-paw-1.jpg" alt="Suite Regal Paw" id="current-image">
+        <button id="next-image">&#10095;</button>
+      </div>
+      <!-- formulario de reserva aquí -->
+      <section class="reservation">
+        <form action="confirmation.html" method="GET">
+          <label for="check-in">CHECK-IN DATE:</label>
+          <input type="date" id="check-in">
+          <label for="check-out">CHECK-OUT DATE:</label>
+          <input type="date" id="check-out">
+          <label for="adults">ADULTS:</label>
+          <input type="number" id="adults" min="1">
+          <label for="children">PUPPIES:</label>
+          <input type="number" id="children" min="0">
+          <!--  campo oculto para el precio base -->
+          <input type="hidden" id="base-price" name="base-price" value="2000">
+          <button type="button" id="check-price">Check Price</button>
+          <button type="submit">reserve now</button>
+        </form>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
+
+  
+
+  <footer>
+    <div class="logo">
+      <img src="escudo.jpg" alt="Logo del hotel">
+      <h1>Pawkingham Palace</h1>
+    </div>
+    <div class="contact-info">
+      <h2>CONTACT</h2>
+      <p>London SW1A 1AA, England</p>
+      <p>(020) 759-3000 or (0808) 850-0909</p>
+      <p>pawkinghampalace@reservation.com</p>
+    </div>
+    <div class="more-info">
+      <h2>MORE</h2>
+      <ul>
+        <li><a href="#">Special Offers</a></li>
+        <li><a href="#">Guest Information</a></li>
+        <li><a href="#">Accessibility Information</a></li>
+        <li><a href="#">Frequently Asked Questions</a></li>
+        <li><a href="#">Location Map</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+    </div>
+    <div class="keep-in-touch">
+      <h2>KEEP IN TOUCH</h2>
+      <p>Sign up to our mailing list</p>
+    </div>
+  </footer>
+  <script src="simple.js"></script>
+  <script src="preciosimple.js"></script>
+</body>
+</html>
+
+    
