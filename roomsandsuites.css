@@ -3,6 +3,7 @@ body {
   font-family: "Times New Roman", Times, serif; /* Establecer la fuente Times New Roman */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Estilos para el encabezado */
@@ -91,4 +92,35 @@ header {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .room-types {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  }
+}
+
+@media (max-width: 768px) {
+  .room-types {
+    grid-template-columns: 1fr; /* Una columna */
+  }
+
+  .room img {
+    height: auto; /* Altura automática para mantener la proporción en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  header, .room h2 {
+    padding: 10px; /* Reducir padding en pantallas más pequeñas */
+  }
+
+  .logo h1 {
+    font-size: 1.5em; /* Reducir tamaño de la fuente en pantallas más pequeñas */
+  }
+
+  .room-types {
+    padding: 10px; /* Reducir padding en pantallas más pequeñas */
+  }
 }
