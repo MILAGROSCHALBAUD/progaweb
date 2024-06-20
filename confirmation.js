@@ -17,3 +17,5 @@ window.addEventListener('DOMContentLoaded', function () {
     confirmationMessage.textContent = 'Your reservation has been successfully confirmed!';
   });
 });
+
+

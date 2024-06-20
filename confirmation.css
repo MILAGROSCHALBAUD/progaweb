@@ -1,3 +1,46 @@
+/* Estilos generales */
+/* ... */
+
+/* Centrar logo */
+.logo {
+  text-align: center;
+}
+
+/* Estilo para logo */
+.logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilo logo */
+.logo h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Estilo para el menú */
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+nav ul li {
+  margin: 0 10px; /* Espacio entre elementos */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black; /* Color del texto del menú */
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+
 body {
   font-family: 'Times New Roman', Times, serif;
   text-align: center;

@@ -4,27 +4,47 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-header {
-  text-align: center;
-  background-color: #f0f0f0;
-  color: #000;
-  padding: 10px 0;
-}
+/* Estilos generales */
+/* ... */
 
+/* Centrar logo */
 .logo {
-  display: inline-block;
+  text-align: center;
 }
 
+/* Estilo para logo */
 .logo img {
-  width: 50px;
-  vertical-align: middle;
+  display: block;
+  margin: 0 auto;
 }
 
+/* Estilo logo */
 .logo h1 {
-  display: inline-block;
-  margin: 0;
-  vertical-align: middle;
+  font-family: "Times New Roman", Times, serif;
 }
+
+/* Estilo para el menú */
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+nav ul li {
+  margin: 0 10px; /* Espacio entre elementos */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black; /* Color del texto del menú */
+  font-family: "Times New Roman", Times, serif;
+}
+
 
 main {
   display: flex;

@@ -1,0 +1,187 @@
+/* Estilos generales */
+/* ... */
+
+/* Centrar logo */
+.logo {
+    text-align: center;
+}
+  
+/* Estilo para logo */
+.logo img {
+    display: block;
+    margin: 0 auto;
+}
+  
+/* Estilo logo */
+.logo h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+  
+/* Estilo para el menú */
+nav {
+    text-align: center;
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+}
+  
+nav ul li {
+    margin: 0 10px; /* Espacio entre elementos */
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: black; /* Color del texto del menú */
+    font-family: "Times New Roman", Times, serif;
+}
+  
+/* Cambiar el tipo de letra para todo el contenido de la página */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#imagenes {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
+    justify-content: space-between; /* Espacio entre las columnas */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px;
+}
+
+#imagenes img {
+    width: calc(50% - 10px); /* Ancho de cada imagen para dos columnas */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: space-between; /* Distribuir los elementos horizontalmente */
+    align-items: flex-start; /* Alinear elementos en la parte superior */
+    padding: 20px;
+}
+
+/* Estilo para el logo y el nombre del hotel */
+.footer-logo {
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    align-items: flex-start; /* Alinear elementos a la izquierda */
+    margin-bottom: 20px; /* Agregar espacio inferior para separar del contenido inferior */
+}
+
+/* Estilo para el nombre del hotel */
+.footer-logo h1 {
+    margin: 0; /* Eliminar márgenes */
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Estilo para el resto del contenido del pie de página */
+.footer-content {
+    display: flex;
+    align-items: flex-start; /* Alinear elementos a la izquierda */
+}
+
+/* Estilo para la sección de MORE, CONTACT y KEEP IN TOUCH */
+.contact-info,
+.more-info,
+.keep-in-touch {
+    display: flex;
+    flex-direction: column; /* Apilar elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+}
+
+.contact-info h2,
+.more-info h2,
+.keep-in-touch h2 {
+    margin-bottom: 10px; /* Espacio entre el título y los elementos */
+}
+
+.contact-info p,
+.more-info ul,
+.keep-in-touch p {
+    margin: 5px 0; /* Espacio entre elementos */
+}
+
+/* Quitar las viñetas en la sección de MORE */
+.more-info ul {
+    list-style-type: none; /* Quitar las viñetas */
+}
+
+.more-info ul li a {
+    text-decoration: none; /* Quitar subrayado */
+    color: black; /* Cambiar color del texto */
+}
+
+/* Media queries para hacer la página responsive */
+
+/* Estilo para pantallas chicas */
+@media screen and (max-width: 768px) {
+    nav ul,
+    .contact-info,
+    .more-info,
+    .keep-in-touch {
+        flex-direction: column; /* Apilar elementos verticalmente */
+    }
+  
+    nav ul li {
+        margin: 10px 0; /* Espacio entre elementos */
+    }
+  
+    .logo h1 {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño */
+    }
+  
+    .footer-logo h1 {
+        font-size: 1.2em; /* Tamaño de fuente más pequeño */
+    }
+  
+    .contact-info,
+    .more-info,
+    .keep-in-touch {
+        margin: 0; /* Eliminar el margen */
+    }
+
+    #imagenes img {
+        width: 100%; /* Ajustar el ancho de las imágenes para una columna */
+    }
+}
+  
+/* Estilo para pantallas medianas y grandes */
+@media screen and (min-width: 769px) {
+    .logo img {
+        width: 100px; /* Tamaño de la imagen del logo */
+    }
+  
+    nav ul {
+        justify-content: center; /* Centrar horizontalmente */
+    }
+  
+    .logo h1 {
+        font-size: 2em; /* Tamaño de fuente más grande */
+    }
+  
+    .footer-logo h1 {
+        font-size: 1.5em; /* Tamaño de fuente más grande */
+    }
+  
+    .contact-info,
+    .more-info,
+    .keep-in-touch {
+        margin: 0 20px; /* Espacio entre elementos */
+    }
+
+    /* Redefinir para dos columnas */
+    @media screen and (min-width: 768px) {
+        #imagenes img {
+            width: calc(50% - 20px); /* Ajustar el ancho de las imágenes para dos columnas */
+        }
+    }
+}

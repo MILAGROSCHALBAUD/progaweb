@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "suite-junior-1.jpg",
       "suite-junior-2.jpg",
       "suite-junior-3.jpg",
-      "suite-junior4.jpg",
+      "suite-junior-4.jpg",
       "suite-junior-5.jpg",
       "suite-junior-6.jpg",
       "suite-junior-7.jpg"

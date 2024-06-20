@@ -1,3 +1,4 @@
+
 /* Estilos generales */
 body {
   font-family: "Times New Roman", Times, serif; /* Establecer la fuente Times New Roman */
@@ -6,20 +7,47 @@ body {
   box-sizing: border-box;
 }
 
-/* Estilos para el encabezado */
-header {
-  text-align: center; /* Centrar el contenido */
-  padding: 20px; /* Espacio alrededor del encabezado */
+/* Estilos generales */
+/* ... */
+
+/* Centrar logo */
+.logo {
+  text-align: center;
 }
 
+/* Estilo para logo */
 .logo img {
-  display: block; /* Asegurar que la imagen sea un bloque */
-  margin: 0 auto; /* Centrar la imagen horizontalmente */
+  display: block;
+  margin: 0 auto;
 }
 
+/* Estilo logo */
 .logo h1 {
-  margin-top: 10px; /* Espacio superior */
+  font-family: "Times New Roman", Times, serif;
 }
+
+/* Estilo para el menú */
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+nav ul li {
+  margin: 0 10px; /* Espacio entre elementos */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black; /* Color del texto del menú */
+  font-family: "Times New Roman", Times, serif;
+}
+
 
 /* Estilos para la sección de tipos de habitaciones */
 .room-types {
