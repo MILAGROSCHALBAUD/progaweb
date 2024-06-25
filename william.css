@@ -98,3 +98,61 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
+/* Estilo para pantallas chicas */
+@media screen and (max-width: 768px) {
+  nav ul,
+  .contact-info,
+  .more-info,
+  .keep-in-touch {
+      flex-direction: column; /* Apilar elementos verticalmente */
+  }
+
+  nav ul li {
+      margin: 10px 0; /* Espacio entre elementos */
+  }
+
+  .logo h1 {
+      font-size: 1.5em; /* Tamaño de fuente más pequeño */
+  }
+
+  .footer-logo h1 {
+      font-size: 1.2em; /* Tamaño de fuente más pequeño */
+  }
+
+  .contact-info,
+  .more-info,
+  .keep-in-touch {
+      margin: 0; /* Eliminar el margen */
+  }
+
+  #imagenes img {
+      width: 100%; /* Ajustar el ancho de las imágenes para una columna */
+  }
+}
+
+/* Estilo para pantallas medianas y grandes */
+@media screen and (min-width: 769px) {
+  .logo img {
+      width: 100px; /* Tamaño de la imagen del logo */
+  }
+
+  nav ul {
+      justify-content: center; /* Centrar horizontalmente */
+  }
+
+  .logo h1 {
+      font-size: 2em; /* Tamaño de fuente más grande */
+  }
+
+  .footer-logo h1 {
+      font-size: 1.5em; /* Tamaño de fuente más grande */
+  }
+
+  .contact-info,
+  .more-info,
+  .keep-in-touch {
+      margin: 0 20px; /* Espacio entre elementos */
+  }
+}
